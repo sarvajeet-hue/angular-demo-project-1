@@ -1,0 +1,18 @@
+<p>home-page works!</p>
+
+<div>
+
+
+
+  <div>
+    @for (item of items ; track item.id){
+
+      <p><a [routerLink]="['/snippet' , item.id]">{{item.title}}</a></p>
+      <p>{{item.code}}</p>
+    }
+  </div>
+
+
+</div>
+
+

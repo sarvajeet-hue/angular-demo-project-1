@@ -1,0 +1,26 @@
+<p>create-bin works!</p>
+
+
+<h1>Create Code Snippet</h1>
+<form (submit)="submitCode()" [formGroup]="codeData">
+
+  <label for="title">Title</label>
+  <input type="text" id="title" [formControl]="title" ><br><br>
+
+
+  <label for="code">Code</label>
+  <textarea type="text" [formControl]="code" placeholder="Enter your Code here" id="code" cols="30" rows="10">
+
+
+  </textarea>  <br>
+
+
+
+
+  <button>Create Code</button>
+
+
+
+
+
+</form>

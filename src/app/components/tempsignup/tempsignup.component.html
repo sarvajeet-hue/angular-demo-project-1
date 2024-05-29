@@ -1,0 +1,50 @@
+<p>tempsignup works!</p>
+<p>signup</p>
+
+<p>template driven form</p>
+
+<form #registerForm = "ngForm" >
+
+  <label for="name">Name</label>
+  <input
+   type="text"
+   id="name"
+   required
+   ngModel
+   name="name"
+   #name = "ngModel"
+   ><br><br>
+
+
+  <label for="email">Email</label>
+  <input
+  type="email"
+  name="email"
+  placeholder="Email"
+  ngModel
+  required
+  #email = "ngModel"
+  ><br>
+
+
+  <label for="password">Password</label>
+  <input
+  required
+  name="password"
+  type="password"
+  placeholder="password"
+  ngModel
+  minlength="6"
+  #password = "ngModel" >
+
+  <p [hidden]="password.valid || password.untouched">please enter 6 digit password</p>
+
+
+
+  <button [disabled]="registerForm.untouched" (click)="register(registerForm)">Sign Up</button>
+
+
+
+
+
+</form>

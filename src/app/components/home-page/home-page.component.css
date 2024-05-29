@@ -1,0 +1,22 @@
+/* CSS for the <p> element */
+p {
+  margin: 10px 0; /* Add some margin for spacing between paragraphs */
+}
+
+/* CSS for the <a> element */
+a {
+  text-decoration: none; /* Remove underline from links */
+  color: #007bff; /* Set link color */
+}
+
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* CSS for the inner <div> */
+div > div {
+  background-color: #f0f0f0; /* Set background color */
+  padding: 10px; /* Add padding */
+  border-radius: 5px; /* Add border radius */
+  margin-top: 20px; /* Add some margin at the top */
+}

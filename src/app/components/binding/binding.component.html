@@ -1,0 +1,27 @@
+<p>binding works!</p>
+<p>{{isvalue}}</p>
+<input type="text" value="username" (change)="onChange($event)">
+
+<input type="text" [(ngModel)]="isvalue">
+
+<div>
+  @for (user of users; track user.name) {
+    @if (user.age > 25) {
+      <p> this age is greater than 25{{user.name}}</p>
+    }
+    <p>Name - {{user.name | titlecase}} Age - {{user.age}} boolean value - {{user.present}} </p>
+  }
+</div>
+
+
+
+
+
+<p>
+  {{name}} {{isSingle ? "True" : "False"}}
+</p>
+
+<p>salary- {{salary | currency: "INR"}}</p>
+
+<button class="bg-blue-400 px-3 py-2 text-white font-bold rounded-lg hover:text-grey-500 hover:bg-blue-300 transition-all "
+ (click)="sendData()" >Send data</button>

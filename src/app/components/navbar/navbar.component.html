@@ -1,0 +1,28 @@
+<nav class="flex justify-between items-center bg-blue-800 text-white">
+  <div class="font-bold ml-7 text-[30px]">
+    <a routerLink="/">CodeBin</a>
+  </div>
+  <ul class="flex justify-center items-center gap-5 mr-6">
+
+    @if(authService.isAuthenticated()){
+      <li><a routerLink="/createBin">CreateBin</a></li>
+    }
+    <li><a routerLink="/about">About</a></li>
+    <li>
+      @if(authService.isAuthenticated()){
+        <button (click)="logout()">Logout</button>
+      }
+      @else{
+        <div class="flex items-center justify-center gap-5" >
+          <button ><a routerLink="/login" routerLinkActive="active">Login</a></button>
+          <button><a routerLink="/signup"  routerLinkActive="active">Signup</a></button>
+        </div>
+      }
+    </li>
+    <!-- <li><a routerLink="/login" routerLinkActive="active">Login</a></li> -->
+    <!-- <li><a routerLink="/signup"  routerLinkActive="active">Signup</a></li> -->
+    <!-- <li><a routerLink="/tempsignup">Tempsignup</a></li> -->
+    <!-- <li (click)="logout()" >Logout</li> -->
+
+  </ul>
+</nav>

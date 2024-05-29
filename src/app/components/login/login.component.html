@@ -1,0 +1,13 @@
+
+<h1 class="font-bold flex justify-center items-center">Login</h1>
+<form  (submit)="login()" [formGroup]="loginForm">
+  <P>Please Login</P>
+
+  <input type="email"  placeholder="Enter your Email" [formControl]="email">
+  <p [hidden]="email.valid || email.untouched">Please enter Correct Email Address</p>
+  <input type="password" [formControl]="password" placeholder="Enter your password">
+
+
+  <button>Login</button>
+</form>
+
