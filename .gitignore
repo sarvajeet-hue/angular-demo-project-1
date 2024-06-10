@@ -6,6 +6,9 @@
 /out-tsc
 /bazel-out
 
+#remove this b1 file
+b1
+
 # Node
 /node_modules
 npm-debug.log
