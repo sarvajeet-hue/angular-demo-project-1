@@ -6,8 +6,7 @@
 /out-tsc
 /bazel-out
 
-#remove this b1 file
-b1
+
 
 # Node
 /node_modules
@@ -22,6 +21,8 @@ yarn-error.log
 *.launch
 .settings/
 *.sublime-workspace
+a.txt
+src\app\components\b1
 
 # Visual Studio Code
 .vscode/*
