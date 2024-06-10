@@ -22,6 +22,7 @@ yarn-error.log
 .settings/
 *.sublime-workspace
 a.txt
+gitignore.txt
 src\app\components\b1
 
 # Visual Studio Code
